@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe Item, type: :model do
+RSpec.describe List, type: :model do
   #let(:user) { FactoryGirl.create :user }
   #let(:list) { FactoryGirl.create :list }
 

@@ -5,7 +5,6 @@ RSpec.describe Item, type: :model do
   #let(:list) { FactoryGirl.create :list }
   #let(:item) { FactoryGirl.create :item }
 
-  it { is_expected.to belong_to(:user) }
   it { is_expected.to belong_to(:list) }
 
   #describe "attributes" do
