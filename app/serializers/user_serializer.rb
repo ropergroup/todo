@@ -1,3 +1,16 @@
 class UserSerializer < ActiveModel::Serializer
-  attributes :id
+  attributes :id, :created_at, :name, :email
+
+
+  def name
+    object.name
+  end
+
+  def created_at
+    object.created_at.strftime('%B %d, %Y')
+  end
+
+  def email
+    object.email
+  end
 end
