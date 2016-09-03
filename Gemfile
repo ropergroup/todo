@@ -48,3 +48,5 @@ gem 'bootstrap-sass'
 gem 'bootswatch-rails'
 
 gem 'figaro', '1.1.1'
+
+gem 'active_model_serializers'
