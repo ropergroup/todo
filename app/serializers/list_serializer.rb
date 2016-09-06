@@ -1,7 +1,5 @@
 class ListSerializer < ActiveModel::Serializer
 
-
-  binding.pry
   attributes :list, :created_at
 
 
