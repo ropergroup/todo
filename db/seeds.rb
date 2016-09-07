@@ -26,15 +26,20 @@ require 'faker'
   50.times do
 
     Item.create!(
-    user: users.sample,
     list: lists.sample,
-    Item: Faker::Hipster.word
+    item: Faker::Hipster.word
     )
     end
     items = Item.all
 
+User.create!(
+  name: 'tom',
+  email: 'cc@cc.com',
+  password: 'password'
+)
 
  puts "Seed finished"
  puts "#{Item.count} items created"
  puts "#{List.count} lists created"
  puts "#{User.count} users created"
+ puts "Tom was created"
